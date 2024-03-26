@@ -13,44 +13,44 @@ function ProjectContainer() {
         Id : 1,
         img:valorImg1,
          title:'VIRTUAL TERMINAL',
-         Desc:'Checking my project for first time',
+         Desc:'The Friend-to-Friend Product Purchasing System aims to facilitate the process of buying products for friends who are located in different places. If you are away from your current location but wish to buy a product from a local store, you can have your friend purchase it on your behalf. The shopkeeper will then send the payment link to your designated WhatsApp number or email, allowing you to make the payment securely and conveniently.',
          link:'www.google.com'
    } ,
         {
           Id :2 ,
         img:valorImg2,
-         title:'VALOR CONNECT API',
-         Desc:'Checking my project for first time',
+         title:'MERCHANT BOARDING',
+         Desc:'Welcome to our POS Machine Purchase Platform! We specialize in providing reliable Point of Sale (POS) solutions tailored to meet the needs of businesses like yours. Our POS machines are designed to streamline your operations, enhance efficiency, and improve customer service.',
          link:'www.google.com'
    } ,
    {
     Id :3 ,
     img:slotBook,
      title:'EMPLOYE PROJECT ',
-     Desc:'Checking my project for first time',
+     Desc:'Welcome to the Student Education Tracking System, a comprehensive platform designed to monitor and manage student progress and academic performance. Whether you are an educator, administrator, or parent, our system provides the tools you need to support student learning and achievement effectively.',
      link:'www.google.com'
 } ,
-{
-  Id : 4,
-    img:employe,
-     title:'STUDENT SLOT BOOKING',
-     Desc:'Checking my project for first time',
-     link:'www.google.com'
-} ,
-{
-  Id : 5,
-    img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKjIOwpsHlQL8bdYCwqizN4e1ld_qLck5LDu3HZXk_Jw&s',
-     title:'My Project',
-     Desc:'Checking my project for first time',
-     link:'www.google.com'
-} ,
-{
-  Id : 6,
-    img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKjIOwpsHlQL8bdYCwqizN4e1ld_qLck5LDu3HZXk_Jw&s',
-     title:'My Project',
-     Desc:'Checking my project for first time',
-     link:'www.google.com'
-} 
+// {
+//   Id : 4,
+//     img:employe,
+//      title:'STUDENT SLOT BOOKING',
+//      Desc:'Checking my project for first time',
+//      link:'www.google.com'
+// } ,
+// {
+//   Id : 5,
+//     img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKjIOwpsHlQL8bdYCwqizN4e1ld_qLck5LDu3HZXk_Jw&s',
+//      title:'My Project',
+//      Desc:'Checking my project for first time',
+//      link:'www.google.com'
+// } ,
+// {
+//   Id : 6,
+//     img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKjIOwpsHlQL8bdYCwqizN4e1ld_qLck5LDu3HZXk_Jw&s',
+//      title:'My Project',
+//      Desc:'Checking my project for first time',
+//      link:'www.google.com'
+// } 
 
 
 ]
@@ -58,7 +58,7 @@ function ProjectContainer() {
     <Element className='projectContainer' id='projects'>
 
         <h1>PROJECTS</h1>
-        <p>I have done for this project</p>
+        {/* <p>I have done for this project</p> */}
         <div className='projectContainer_projects'>
              {
               client_project.map((project,index)=>{

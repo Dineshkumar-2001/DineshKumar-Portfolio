@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header/Header';
 import TopContainer from './TopContainer/TopContainer';
 import SkillConatainer from './skillContainer/SkillConatainer';
+import Skills from './Skills/Skills';
 import ProjectContainer from './projectContainer/ProjectContainer';
 import Experience_Container from './ExperienceContainer/Experience_Container';
 import Contact from './Contact/Contact';
@@ -12,7 +13,8 @@ function App() {
     <div >
       <Header />
       <TopContainer/>
-      <SkillConatainer/>
+      {/* <SkillConatainer/> */}
+      <Skills/>
       <ProjectContainer/>
       <Experience_Container/>
       <Contact/>

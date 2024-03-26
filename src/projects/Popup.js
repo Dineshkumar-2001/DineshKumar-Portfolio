@@ -5,20 +5,21 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogActions from '@mui/material/DialogActions';
 import Button from '@mui/material/Button';
+import './Popup.css'; // Import the CSS file
 
 const Popup = ({ img, title, Desc, link, open, onClose }) => {
   return (
     <Dialog open={open} onClose={onClose} maxWidth="md">
-      <DialogTitle>{title}</DialogTitle>
+      <DialogTitle className="popup-title">{title}</DialogTitle>
       <DialogContent>
         {/* <img src={img} alt={title} /> */}
-        <DialogContentText>{Desc}</DialogContentText>
+        <DialogContentText className="popup-content">{Desc}</DialogContentText>
       </DialogContent>
-      <DialogActions>
+      <DialogActions className="popup-button">
         <Button onClick={onClose}>Close</Button>
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        {/* <a href={link} target="_blank" rel="noopener noreferrer">
           <Button color="primary">Learn more</Button>
-        </a>
+        </a> */}
       </DialogActions>
     </Dialog>
   );

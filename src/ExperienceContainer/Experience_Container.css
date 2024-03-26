@@ -9,11 +9,20 @@
 }
 
 .experienceContainer > h1 {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    background-color:  #f64c08;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Montserrat',sans-serif;
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px dotted white;
 }
 
 .experienceContainer__info{
-    background: url('../Images/myImage2.jpg');
+    /* background: url('../Images/myImage2.jpg'); */
     background-position: center;
     background-size: contain;
     /* background-repeat: no-repeat; */

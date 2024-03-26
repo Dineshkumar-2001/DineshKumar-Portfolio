@@ -5,22 +5,31 @@
     flex-direction: column;
     color: white;
     justify-content: center;
-    margin: 200px;
+    margin: 100px;
     align-items: center;
 
 }
 
 .projectContainer > h1 {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    background-color:  #f64c08;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Montserrat',sans-serif;
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px dotted white;
 }
 
 .projectContainer > p {
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 .projectContainer_projects {
     display: flex;
     width: 60vw;
-    margin-top: 50px;
+    margin-top: 20px;
     flex-wrap: wrap;
 }

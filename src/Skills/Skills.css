@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text:ital,wght@0,600;1,400&family=Montserrat:wght@600&display=swap');
+
+
+
+.skillContainer_Head{
+    /* background-color:  #f64c08; */
+    display: flex;
+    justify-content: center;
+    /* color: aliceblue;
+    font-family: 'Montserrat',sans-serif; */
+    /* width: 100%; */
+}
+
+.skillContainer_Head > h2{
+    background-color:  #f64c08;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Montserrat',sans-serif;
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px dotted white;
+}
+
+/* .skills_Part{
+    margin-top: 20px;
+  
+    color: antiquewhite;
+    display: flex;
+     grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+.skills_Part {
+    display: flex;
+    width: 80%;
+    justify-content: center; /* Distribute items evenly */
+    margin-left: 10%;
+    margin-top: 30px;
+ }
+ 
+ .skills_Part > span {
+    flex: 1; /* Equal width for all spans */
+    background-color: #ffffff;
+    color: black;
+    border: 3px solid #f64c08;
+    padding: 20px; /* Adjust padding as needed */
+    margin: 10px;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+ }

@@ -18,6 +18,7 @@ function Header() {
     name: '',
     email: '',
     phone: '',
+    message : ''
   });
 
   // State to manage error messages
@@ -25,6 +26,7 @@ function Header() {
     name: '',
     email: '',
     phone: '',
+    message : ''
   });
 
   // Handler to open the dialog
@@ -61,22 +63,30 @@ function Header() {
     if (!formData.phone) {
       errors.phone = 'Phone is required';
     }
-
+    if (!formData.message) {
+      errors.message = 'Message is required';
+    }
+  
     // If there are errors, update the formErrors state and don't proceed with API call
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
       return;
     }
-
-    // If there are no errors, proceed with the API call and close the dialog
-    // Here, you can make the POST API call with the formData
-
+  
+    // If there are no errors, construct the message
+    const message = `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
+  
+    // Send email
+    const mailtoLink = `mailto:dineshkumar93847@gmail.com?subject=Contact Form Submission&body=${encodeURIComponent(message)}`;
+    window.open(mailtoLink);
+  
     // Reset the formErrors state
     setFormErrors({});
-
+  
     // Close the dialog
     handleClose();
   };
+  
   
   return (
     <div className='header'>
@@ -89,7 +99,7 @@ function Header() {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle    sx={{marginLeft:'80px',fontWeight:'300px'}} id="alert-dialog-title">{"Provide Your Information"}</DialogTitle>
+        <DialogTitle    sx={{fontWeight:'300px', backgroundColor: '#f64c08',display:'flex',justifyContent:'center', fontSize:'25px',fontFamily:'Montserrat'}} id="alert-dialog-title">{"Provide Your Information"}</DialogTitle>
         <DialogContent>
           {/* <DialogContentText id="alert-dialog-description">
             Please enter your name, email, and phone number:
@@ -97,6 +107,7 @@ function Header() {
           <TextField
             autoFocus
             margin="dense"
+            sx={{marginTop:'30px'}}
             id="name"
             name="name"
             label="Name"
@@ -124,12 +135,26 @@ function Header() {
             id="phone"
             name="phone"
             label="Phone Number"
-            type="tel"
+            type="number"
             fullWidth
             value={formData.phone}
             onChange={handleChange}
             error={!!formErrors.phone} // Show red border if there is an error
             helperText={formErrors.phone || ' '}
+          />
+           <TextField
+            margin="dense"
+            id="message"
+            name="message"
+            label="message"
+            type="name"
+            fullWidth
+            multiline
+            maxRows={4}
+            value={formData.message}
+            onChange={handleChange}
+            error={!!formErrors.message} // Show red border if there is an error
+            helperText={formErrors.message || ' '}
           />
         </DialogContent>
         <DialogActions sx={{marginTop:'-30px'}}>

@@ -1,5 +1,5 @@
 .project {
-   margin: 15px;
+   margin: 25px;
    width: 350px;
    height: auto;
    text-align: center;
@@ -29,11 +29,21 @@
    padding: 5px;
    border-radius: 4px;
    transition: transform 0.2s, color 0.2s;
+  
  }
  
  .project:hover {
    color: white;
-   transform: scale(1.05);
+   transform: scale(1.02);
    cursor: pointer;
  }
+
+ .btn {
+  background-color: #007bff; /* Button background color */
+  color: #ffffff; /* Text color */
+  padding: 10px 20px; /* Padding */
+  border: none; /* Remove border */
+  cursor: pointer; /* Show pointer on hover */
+  margin-top: 10px; /* Add margin top */
+}
  

@@ -1,0 +1,30 @@
+.popup-title {
+    text-align: center; /* Center align the title */
+    background-color: #f64c08; /* Background color for the title */
+    padding: 10px; /* Add padding to the title */
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+  }
+  
+  .popup-content {
+    text-align: center; /* Center align the content */
+    padding: 20px; /* Add padding to the content */
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .popup-button {
+    display: flex;
+    justify-content: center; /* Center align the button */
+  }
+  
+  .popup-button button {
+    background-color: #f64c08; /* Background color for the title */
+    padding: 10px 20px; /* Add padding to the title */
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+  }

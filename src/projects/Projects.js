@@ -19,10 +19,11 @@ const Projects = ({ img, title, Desc, link }) => {
       <img
         src={img}
         alt={title}
-        onClick={handleImageClick}
+        // onClick={handleImageClick}
         className={showPopup ? 'project-image-popup' : 'project-image'}
       />
-
+      <button className='btn'  onClick={handleImageClick}>View Details</button> {/* Add button */}
+      
       {showPopup && (
         <Popup
           img={img}

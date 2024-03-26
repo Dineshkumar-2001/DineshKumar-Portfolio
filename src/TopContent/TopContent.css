@@ -3,13 +3,14 @@
 .topContent{
     color: azure;
     position: relative;
+   
 }
 
 .topContent__container{
     position: absolute;
-  top: 300px;
-  right: 150px;
-
+  top: 100px;
+  left: 950px;
+  width: 42%;
 }
 
 .topContent__container > p {
@@ -29,9 +30,32 @@
     outline: none;
 }
 
-.topContent__container >h1 {
-    font-size: 50px;
+.topContent__container >h2 {
+    font-size: 30px;
     font-family: 'Montserrat',sans-serif;
+   color: #f64c08;
+}
+
+.topContent__container >h4 {
+    font-size: 25px;
+    font-family: 'Montserrat',sans-serif;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.topContent__container >h3 > span {
+    font-size: 20px;
+    font-family: 'Montserrat',sans-serif;
+   color: #f64c08;
+   
+}
+
+.topContent__container >p > span {
+    font-size: 15px;
+    font-family: 'Montserrat',sans-serif;
+   color: #f64c08;
+   
 }
 
 .topContent__downloadButton{
